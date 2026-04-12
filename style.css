@@ -1247,3 +1247,18 @@ main {
 .custom-options-box::-webkit-scrollbar { width: 6px; }
 .custom-options-box::-webkit-scrollbar-thumb { background-color: var(--primary); border-radius: 10px; }
 .custom-options-box::-webkit-scrollbar-track { background-color: var(--bg-color); border-radius: 10px; }
+
+/* =========================================
+   ACTIVITY PAGE TITLE FONT SIZE
+   ========================================= */
+.activity-title {
+    font-size: 45px !important; /* Change this number to adjust desktop size */
+    line-height: 1.2;
+}
+
+/* Make sure it scales down nicely on mobile phones */
+@media (max-width: 768px) {
+    .activity-title {
+        font-size: 32px !important; /* Change this number to adjust phone size */
+    }
+}
