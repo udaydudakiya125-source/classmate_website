@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassMate | Admission Inquiry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="main-nav">
+            <a href="index.html" class="logo">ClassMate</a>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="apply.html" class="nav-link active-link">Admissions</a></li>
+                    <li><a href="activity.html" class="nav-link">Activity</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="apply.html" class="btn btn-primary">Apply Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        
+        <section class="apply-hero">
+            <div class="apply-hero-content">
+                <br>
+                <br>
+                <h1>Start Your Journey.</h1>
+                <p>Fill out the admission inquiry form below and our academic counselors will get in touch with you shortly.</p>
+            </div>
+        </section>
+
+        <section class="inquiry-form-section">
+            <div class="inquiry-card">
+                
+                <div class="inquiry-header">
+                    <h2>ADMISSION INQUIRY FORM</h2>
+                </div>
+
+                <div class="inquiry-body">
+                    <div id="apply-success" class="success-msg" style="display:none; background: #D4EDDA; color: #155724; padding: 20px; border-radius: 15px; margin-bottom: 25px; font-weight: 600;">Entry Saved Successfully!</div>
+                    
+                  <form id="apply-form" action="https://formsubmit.co/udaydudakiya125@gmail.com" method="POST" onsubmit="handleApplySubmit(event)">
+                   
+
+                        
+    <input type="hidden" name="_subject" value="New Admission Inquiry!">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+                        
+    <div class="form-row">
+        <div class="form-group">
+            <label for="student-name">Student Name <span class="required">*</span></label>
+            <input type="text" id="student-name" name="Student_Name" class="form-input" required placeholder="Enter Student Name">
+        </div>
+    </div>
+
+    <div class="form-row grid-3">
+        <div class="form-group">
+            <label for="parents-mobile">parent's primary No. <span class="required">*</span></label>
+            <input type="tel" id="parents-mobile" name="Parent_Primary_No" class="form-input" required placeholder="Mobile No.">
+        </div>
+        <div class="form-group">
+            <label for="parent-mobile">Parent's secondary No. <span class="required">*</span></label>
+            <input type="tel" id="parent-mobile" name="Parent_Secondary_No" class="form-input" required placeholder="Mobile No.">
+        </div>
+        <div class="form-group">
+            <label for="email-id">Parent's Email ID <span class="required">*</span></label>
+            <input type="email" id="email-id" name="Parent_Email" class="form-input" required placeholder="abc@gmail.com">
+        </div>
+    </div>
+                        
+    <div class="form-row">
+        <div class="form-group">
+            <label for="course-interest">Please Select Course in Which You Are Interested <span class="required">*</span></label>
+            <select id="course-interest" name="Interested_Course" class="form-input select-blue" required>
+                <option value="" disabled selected>please select</option>
+                <option value="nursery">Nursery</option>
+                <option value="lkg">LKG</option>
+                <option value="ukg">UKG</option>
+                <option value="class1-5">Class 1-5</option>
+                <option value="class6-10">Class 6-10</option>
+                <option value="class11-12">Class 11-12</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-actions">
+        <button type="submit" class="btn btn-save">Save Entry</button>
+        <button type="reset" class="btn btn-reset">Reset</button>
+        <br>
+        <br>
+    </div>
+
+</form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo footer-logo">ClassMate</div>
+                <p>Empowering the Leaders of Tomorrow.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="footer-contact mt-20">
+                    <li>📍 123 Education Marg, Rajkot</li>
+                    <li>📞 +91 98765 43210</li>
+                </ul>
+            </div>
+             <div class="social-icons mt-20">
+                        <a href="https://facebook.com/your-school-page" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    
+                        <a href="https://instagram.com/your-school-profile" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    
+                        <a href="https://twitter.com/your-school-profile" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    
+                        <a href="https://linkedin.com/company/your-school-page" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    
+                        <a href="https://youtube.com/c/your-school-channel" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 ClassMate. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
