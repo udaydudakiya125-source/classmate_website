@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassMate | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        
+        
+        <div class="main-nav">
+            <a href="index.html" class="logo">ClassMate</a><br><br>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </div>
+                <ul id="nav-menu">
+                    <br><br><li><a href="index.html" class="nav-link active-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="apply.html" class="nav-link">Admissions</a></li>
+                    <li><a href="activity.html" class="nav-link">Activity</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="apply.html" class="btn btn-primary">Apply Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        
+        <section class="hero">
+            <div class="hero-content">
+                
+                <br>
+                <br>
+                <h1>Empowering the<br>Leaders of Tomorrow.</h1>
+                <p>A vibrant, inclusive community dedicated to academic excellence, innovation, and shaping the global citizens of the future.</p>
+                <div class="hero-buttons">
+                    <a href="apply.html" class="btn btn-outline">Apply Now</a>
+                    <a href="contact.html" class="btn btn-outline">Book a Campus Tour</a>
+                </div>
+            </div>
+          
+        </section>
+
+        <section class="quick-links-section">
+            <div class="quick-links-grid">
+                
+                
+                <a href="#dynamic-info" onclick="swapInfo(event, 'view-calendar')" class="quick-link-card">
+                    <div class="icon">📅</div>
+                    <h4>Calendar</h4>
+                </a>
+
+                <a href="#dynamic-info" onclick="swapInfo(event, 'view-bus')" class="quick-link-card">
+                    <div class="icon">🚌</div>
+                    <h4>Bus Routes</h4>
+                </a>
+               
+            </div>
+        </section>
+        
+        
+
+        <section id="dynamic-info" class="dynamic-info-section">
+            <div class="info-container">
+                
+                <div id="view-calendar" class="info-panel active">
+                    <h2 class="section-title center">Live Academic Calendar</h2>
+                    <ul class="holiday-list" id="dynamic-holiday-list">
+                        <!-- Live events will be injected here automatically -->
+                    </ul>
+                </div>
+
+                <div id="view-bus" class="info-panel">
+                    <h2 class="section-title center">City Bus Routes</h2>
+                    <div class="bus-img-box">
+                      <img src="Images/bus route.jpg" alt="City Bus Route Map">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="programs-section">
+            <h2 class="section-title">Our Early Years Program</h2>
+            <div class="programs-grid">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>🌱 Nursery Program</h3>
+                            <p>Play, Learn, and Grow</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>A nurturing environment for your child's first steps into education, focusing on social skills, motor development, and curiosity through play.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>🎨 Junior KG</h3>
+                            <p>Creative Exploration</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Introducing foundational literacy and numeracy through fun activities, storytelling, and art to foster a genuine love for learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>📚 Senior KG</h3>
+                            <p>Preparing for Grade 1</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Structured learning in language, math, and science, combined with collaborative play to ensure a smooth transition to primary school.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-events-section">
+           
+
+                <div class="news-col">
+                    <h2 class="section-title" style="text-align: left;">Latest News</h2>
+                    <div class="news-grid-small">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front" style="padding: 0;">
+                                    <img src="Images/download (1).jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;" alt="Science Fair">
+                                    <div style="position: absolute; bottom: 0; width: 100%; background: rgba(0,0,0,0.6); color: white; padding: 12px 0; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                                        <h4 style="margin: 0; font-size: 16px; text-align: center;">drawing competition</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h4 style="margin-bottom: 10px; font-size: 18px;">Drawing Competition Results</h4>
+                                    </h4>
+                                    <p>These competitions provide a platform for primary school students to showcase their artistic talents and receive national-level recognition. They also offer prizes and certificates, which can boost students' confidence and motivation to continue their artistic pursuits .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front" style="padding: 0;">
+                                    <img src="Images/download.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;" alt="Graduation Details">
+                                    <div style="position: absolute; bottom: 0; width: 100%; background: rgba(0,0,0,0.6); color: white; padding: 12px 0; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                                        <h4 style="margin: 0; font-size: 16px; text-align: center;">Graduation Details</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h4 style="margin-bottom: 10px; font-size: 18px;">Class of 2026 Graduation Details</h4>
+                                    <p>Important information for seniors and families...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front" style="padding: 0;">
+                                    <img src="Images/download.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;" alt="Quiz Results">
+                                    <div style="position: absolute; bottom: 0; width: 100%; background: rgba(0,0,0,0.6); color: white; padding: 12px 0; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                                        <h4 style="margin: 0; font-size: 16px; text-align: center;">Quiz Results</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h4 style="margin-bottom: 10px; font-size: 18px;">Quiz Results</h4>
+                                    <p>Check out the latest quiz results and rankings...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front" style="padding: 0;">
+                                    <img src="Images/download.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;" alt="Admission Information">
+                                    <div style="position: absolute; bottom: 0; width: 100%; background: rgba(0,0,0,0.6); color: white; padding: 12px 0; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                                        <h4 style="margin: 0; font-size: 16px; text-align: center;">Admissions Info</h4>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h4 style="margin-bottom: 10px; font-size: 18px;">New Admission Information</h4>
+                                    <p>Learn about our application process and deadlines for the upcoming academic year.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="student-life" class="social-proof-section">
+            <h2 class="section-title">Community Voices</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="quote">"ClassMate didn't just prepare my daughter for college; it prepared her for life. The community here is truly like a family."</p>
+                    <p class="author">- Jane D., Parent of a Senior</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="quote">"The teachers here really care about what you're passionate about. The STEM program gave me the skills to build my own apps!"</p>
+                    <p class="author">- Marcus T., 10th Grade</p>
+                </div>
+            </div>
+
+            <div class="social-feed">
+                <h3>Follow Our Campus Life on @ClassMateEdu</h3>
+                <div class="social-gallery">
+                    <img src="Images/follow campus 1.jpg" alt="Social Post 1">
+                    <img src="Images/follow campus 2.jpg" alt="Social Post 2">
+                    <img src="Images/follow campus 3.jpg" alt="Social Post 3">
+                    <img src="Images/follow campus 4.jpg" alt="Social Post 4">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo footer-logo">ClassMate</div>
+                <p>Empowering the Leaders of Tomorrow.</p>
+                <ul class="footer-contact mt-20">
+                    <li>📍 123 E-Learning Blvd, Tech City, 10010</li>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>✉️ support@classmate.edu</li>
+                    <li>🕒 Office Hours: Mon-Fri, 8AM - 4PM</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+               <div class="social-links-vertical mt-20">
+                    <a href="https://facebook.com/your-school" target="_blank" rel="noopener noreferrer" class="vertical-link">
+                        <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                        <span class="link-text">Facebook</span>
+                    </a>
+
+                    <a href="https://instagram.com/your-school" target="_blank" rel="noopener noreferrer" class="vertical-link">
+                        <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                        <span class="link-text">Instagram</span>
+                    </a>
+
+                    <a href="https://twitter.com/your-school" target="_blank" rel="noopener noreferrer" class="vertical-link">
+                        <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                        <span class="link-text">Twitter</span>
+                    </a>
+
+                    <a href="https://linkedin.com/company/your-school" target="_blank" rel="noopener noreferrer" class="vertical-link">
+                        <span class="social-icon"><i class="fab fa-linkedin-in"></i></span>
+                        <span class="link-text">LinkedIn</span>
+                    </a>
+
+                    <a href="https://youtube.com/c/your-school" target="_blank" rel="noopener noreferrer" class="vertical-link">
+                        <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                        <span class="link-text">YouTube</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Find Us</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1!2d-73.98!3d40.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzAwLjAiTiA3M8KwNTgnMDAuMCJX!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" width="100%" height="150" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+               
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 ClassMate. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
